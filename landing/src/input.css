@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.public {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  .instrument{
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  .inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+  }
+  .poppins {
+    font-family: "Poppins", sans-serif;
+  }
+  .hero-title{
+    /* background: radial-gradient(50% 50% at 50% 50%, #941DDC 79.5%, rgba(0, 0, 0, 0.8) 100%);*/
+    background: radial-gradient(50% 50% at 50% 50%, #941DDC 79.5%, rgba(0, 0, 0, 0.8) 100%);
+    color: transparent;
+    background-clip: text; 
+
+  }
+
+  .Features-card{
+    background: radial-gradient(50% 239.54% at 50% 50%, #EAD2F9 0%, #EFECF0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  }
+
+  .values-card{
+    background: radial-gradient(50% 239.54% at 50% 50%, #EAD2F9 0%, #EFECF0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  }
+

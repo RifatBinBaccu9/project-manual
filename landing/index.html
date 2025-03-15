@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+      .swiper-pagination-bullet{
+        width: 16px !important;
+        height: 16px !important;
+      }
+      .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #941DDC !important;
+    width: 54px !important;
+    height: 16px !important;
+    border-radius: 10px !important;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+
+    }
+      .rotate-90 {
+      transform: rotate(90deg);
+      transition: transform 0.3s ease-in-out;
+  }
+       .swiper {
+      width: 100%;
+      height: 100%;
+      
+    }
+    .mySwiper {
+      padding-bottom: 70px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-slide {
+      width: 45%;
+    }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Header section -->
+    <header class="">
+      <!-- Navigation -->
+      <div class="max-w-[1592px] px-3 2xl:px-0 mx-auto">
+        <nav
+          class="flex flex-row justify-between items-center border-[2px] border-[#941DDC] rounded-[52px] py-2 sm:py-3 xl:py-4 pr-2 sm:pr-3 xl:pr-4 pl-4 sm:pl-6 xl:pl-8 my-5 sm:my-7 lg:my-8 xl:my-10"
+        >
+          <div
+            class="w-[80px] sm:w-[100px] md:w-[120px] xl:w-[180px] h-[30px] sm:h-[40px] xl:h-[54px]"
+          >
+            <img
+              src="../asset/nabver/Logo.png"
+              alt="Logo"
+              class="w-full h-full"
+            />
+          </div>
+
+          <ul
+            class="hidden lg:flex flex-row gap-6 xl:gap-10 public font-medium text-lg xl:text-xl text-black"
+          >
+            <li class=""><a href="#">Home</a></li>
+            <li><a href="#" class="public">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="flex flex-row items-center gap-4">
+            <button
+              class="public font-medium ttext-base sm:text-lg lg:text-xl text-black"
+            >
+              Login
+            </button>
+            <div
+              class="w-[2px] h-4 bg-black ml-2 sm:ml-3 lg:ml-4 mr-3 sm:mr-5 lg:mr-7"
+            ></div>
+            <button
+              class="public font-medium text-base sm:text-lg lg:text-xl py-2 sm:py-3 xl:py-[14px] px-5 sm:px-7 xl:px-[45px] border bg-[#941DDC] rounded-[30px] text-white"
+            >
+              Register
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <div class="max-w-[1670px] px-3 2xl:px-0 mx-auto">
+       <div class="px-3 flex flex-row items-center justify-between">
+         <!-- Hero Left -->
+         <div class="w-full xl:w-[600px] 2xl:w-[721px]">
+          <button
+            class="border py-2 px-4 text-white bg-[#1E1B2CC2] rounded-[1920px] instrument font-normal text-[12px] mb-7"
+          >
+            ✦ 1000+ Digital Products ✦
+          </button>
+          <h1 class="flex flex-col leading-none text-4xl sm:text-[60px]  2xl:text-[100px] instrument font-bold">
+            <span class="hero-title  ">Sell It <span class="text-[#1E1B2C]">↝</span></span>
+            <span class="hero-title  whitespace-pre">It's Easy-Peasy!</span>
+          </h1>
+          <p class="text-base sm:text-2xl font-normal public mt-8  mb-10">
+            Sell any digital product you can imagine easier than ever before and
+            with the lowest fees in the market right now.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center gap-5">
+            <div class="flex flex-row items-center gap-2">
+              <div class="flex flex-row gap-4">
+                <div class="bg-[#941DDC] w-9 sm:w-[50px] h-9 sm:h-[50px] rounded-full text-base sm:text-xl font-bold text-white flex justify-center items-center">1K</div>
+                <div class="bg-[#a7b326] w-9 sm:w-[50px] h-9 sm:h-[50px] rounded-full text-base sm:text-xl font-bold text-white flex justify-center items-center -ml-6 sm:-ml-7 z-10">1K</div>
+                <div class="bg-[#5c12cb] w-9 sm:w-[50px] h-9 sm:h-[50px] rounded-full text-base sm:text-xl font-bold text-white flex justify-center items-center -ml-6 sm:-ml-7 z-20">1K</div>
+              </div>
+              <span class="text-base sm:text-2xl font-bold public">Active Seller</span>
+            </div>
+            <button class="public font-medium  text-sm sm:text-xl py-2 sm:py-[14px] px-4 sm:px-8 border bg-[#941DDC] rounded-[30px] text-white">Start Selling</button>
+          </div>
+        </div>
+
+        <!-- Hero Right -->
+        <div class="hidden w-[639px] max-h-[500px] xl:max-h-[569px] xl:flex justify-center  relative">
+          <div class="w-[100px] h-[76px] absolute top-10 left-10">
+            <img src="../asset/hero/dots.png" alt="dots" class="w-full h-full">
+          </div>
+          <div class="z-30  flex flex-row items-center w-[208px] h-[128px] p-4 rounded-[16px] bg-[#fff] shadow-2xl absolute left-0 bottom-[106px]">
+            <div>
+              <h1 class=" text-sm font-semibold inter">Sales 
+                summary</h1>
+                <p class="text-2xl font-medium inter mt-[14px] mb-2">40</p>
+                <p class="text-sm font-normal inter">Today</p>
+            </div>
+            <div>
+              <img src="../asset/hero/Sales.png" alt="" class="w-[96px] h-[56px]">
+            </div>
+          </div>
+
+          <div class="z-30  w-[208px] h-[128px] p-4 rounded-[16px] bg-[#fff] shadow-2xl absolute right-0 top-[53px]">
+            <div>
+              <h1 class=" text-sm font-semibold inter">Total customers</h1>
+                <p class="text-2xl font-medium inter mt-4 mb-[14px]">3,435</p>
+                <p class="text-sm font-normal inter flex flex-row items-center gap-1">
+                  <span class="text-[#22C55E] flex gap-[2px] items-center">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <span>40%</span>
+                  </span> 
+                  <span>vs last month</span>
+                </p>
+            </div>
+          </div>
+          <div class="w-[418px] max-h-[500px] xl:max-h-[569px]  flex justify-center items-center  relative overflow-hidden">
+            <div class="bg-[#CB95EF] w-[360px] h-[540px] xl:h-[650px] rotate-[5deg] "></div>
+            <img src="../asset/hero/hero-image.png" alt="Hero" class="absolute w-full h-full"/>
+          </div>
+        </div>
+       </div>
+      </div>
+    </header>
+
+    <!-- Our Features -->
+     <section class="max-w-[1596px] px-3 2xl:px-0 mx-auto my-[50px] md:my-[96px]">
+      <div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-[60px] font-bold instrument"><span class="text-[#1E1B2C]">Our</span> <span class="text-[#941DDC] poppins">Features</span></h1>
+        <p class="text-sm sm:text-base lg:text-lg xl:text-2xl font-medium mb-10">Best features that boast your business </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-[29px]">
+        <div class="text-center flex flex-col justify-center items-center Features-card py-[58px] px-8 rounded-2xl">
+          <div class="border p-3 rounded-full mb-5">
+            <img src="../asset/Features/free.png" alt="free" class="w-[50px] h-[50px]">
+          </div>
+          <h1 class="font-semibold text-xl poppins text-[#941DDC]">Free subscription</h1>
+          <p class="text-sm font-normal poppins mt-[10px]">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit</p>
+        </div>
+        <div class="text-center flex flex-col justify-center items-center Features-card py-[58px] px-8 rounded-2xl">
+          <div class="border p-3 rounded-full mb-5">
+            <img src="../asset/Features/Loading.png" alt="free" class="w-[50px] h-[50px]">
+          </div>
+          <h1 class="font-semibold text-xl poppins text-[#941DDC]">unlimited products</h1>
+          <p class="text-sm font-normal poppins mt-[10px]">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit</p>
+        </div>
+        <div class="text-center flex flex-col justify-center items-center Features-card py-[58px] px-8 rounded-2xl">
+          <div class="border p-3 rounded-full mb-5">
+            <img src="../asset/Features/Email.png" alt="free" class="w-[50px] h-[50px]">
+          </div>
+          <h1 class="font-semibold text-xl poppins text-[#941DDC]">Unlimited emails</h1>
+          <p class="text-sm font-normal poppins mt-[10px]">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit</p>
+        </div>
+        <div class="text-center flex flex-col justify-center items-center Features-card py-[58px] px-8 rounded-2xl">
+          <div class="border p-3 rounded-full mb-5">
+            <img src="../asset/Features/Upselling.png" alt="free" class="w-[50px] h-[50px]">
+          </div>
+          <h1 class="font-semibold text-xl poppins text-[#941DDC]">upselling strategy</h1>
+          <p class="text-sm font-normal poppins mt-[10px]">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit</p>
+        </div>
+        <div class="text-center flex flex-col justify-center items-center Features-card py-[58px] px-8 rounded-2xl">
+          <div class="border p-3 rounded-full mb-5">
+            <img src="../asset/Features/Store.png" alt="free" class="w-[50px] h-[50px]">
+          </div>
+          <h1 class="font-semibold text-xl poppins text-[#941DDC]">Custom storefront</h1>
+          <p class="text-sm font-normal poppins mt-[10px]">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit</p>
+        </div>
+      </div>
+     </section>
+
+   <!-- People -->
+    <section class="max-w-[1596px] px-3 2xl:px-0 mx-auto my-[50px] md:my-[96px]">
+      <div>
+        <h1 class="text-[60px] font-bold instrument">What People Say <span class="text-[#941DDC] ">About Us</span></h1>
+        <p class="text-2xl font-medium poppins">See what our sellers say about us</p>
+      </div>
+
+        <!-- Swiper -->
+  <div class="swiper mySwiper mt-[70px]">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <div class="flex flex-col sm:flex-row items-center justify-between border-[1px] border-[#A541E1] rounded-[10px]">
+        <div class="w-full sm:w-[55%] bg-[#E8CCF8] rounded-tl-[10px] rounded-tr-[10px] sm:rounded-tr-[0px] sm:rounded-bl-[10px] h-[280px] flex flex-col justify-center items-center p-8">
+          <div class="w-[60px] h-[38px]"> <img src="../asset/icons.png" alt="icons" class=""></div>
+          <p class="text-xl font-normal inter mt-4">"I've been consistently impressed with the quality of service provided by this website. They have exceeded my expectations and delivered exceptional results. Highly recommended!"</p>
+         </div>
+         <div class="w-full sm:w-[45%] h-[280px] sm:rounded-tr-[10px] rounded-br-[10px] rounded-bl-[10px] sm:rounded-bl-[0px]   bg-[#F5E8FC] flex flex-col justify-center items-center">
+           <div class="w-[120px] h-[120px] rounded-full overflow-hidden">
+            <img src="../asset/pic.png" alt="pic">
+           </div>
+           <h1 class="text-2xl font-semibold poppins mt-4 mb-1">John Doe</h1>
+           <p class="text-sm font-semibold poppins text-[#777777]">Company CEO</p>
+         </div>
+      </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="flex flex-col sm:flex-row items-center justify-between border-[1px] border-[#A541E1] rounded-[10px]">
+        <div class="w-full sm:w-[55%] bg-[#E8CCF8] rounded-tl-[10px] rounded-tr-[10px] sm:rounded-tr-[0px] sm:rounded-bl-[10px] h-[280px] flex flex-col justify-center items-center p-8">
+          <div class="w-[60px] h-[38px]"> <img src="../asset/icons.png" alt="icons" class=""></div>
+          <p class="text-xl font-normal inter mt-4">"I've been consistently impressed with the quality of service provided by this website. They have exceeded my expectations and delivered exceptional results. Highly recommended!"</p>
+         </div>
+         <div class="w-full sm:w-[45%] h-[280px] sm:rounded-tr-[10px] rounded-br-[10px] rounded-bl-[10px] sm:rounded-bl-[0px]   bg-[#F5E8FC] flex flex-col justify-center items-center">
+           <div class="w-[120px] h-[120px] rounded-full overflow-hidden">
+            <img src="../asset/pic.png" alt="pic">
+           </div>
+           <h1 class="text-2xl font-semibold poppins mt-4 mb-1">John Doe</h1>
+           <p class="text-sm font-semibold poppins text-[#777777]">Company CEO</p>
+         </div>
+      </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="flex flex-col sm:flex-row items-center justify-between border-[1px] border-[#A541E1] rounded-[10px]">
+        <div class="w-full sm:w-[55%] bg-[#E8CCF8] rounded-tl-[10px] rounded-tr-[10px] sm:rounded-tr-[0px] sm:rounded-bl-[10px] h-[280px] flex flex-col justify-center items-center p-8">
+          <div class="w-[60px] h-[38px]"> <img src="../asset/icons.png" alt="icons" class=""></div>
+          <p class="text-xl font-normal inter mt-4">"I've been consistently impressed with the quality of service provided by this website. They have exceeded my expectations and delivered exceptional results. Highly recommended!"</p>
+         </div>
+         <div class="w-full sm:w-[45%] h-[280px] sm:rounded-tr-[10px] rounded-br-[10px] rounded-bl-[10px] sm:rounded-bl-[0px]   bg-[#F5E8FC] flex flex-col justify-center items-center">
+           <div class="w-[120px] h-[120px] rounded-full overflow-hidden">
+            <img src="../asset/pic.png" alt="pic">
+           </div>
+           <h1 class="text-2xl font-semibold poppins mt-4 mb-1">John Doe</h1>
+           <p class="text-sm font-semibold poppins text-[#777777]">Company CEO</p>
+         </div>
+      </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="flex flex-col sm:flex-row items-center justify-between border-[1px] border-[#A541E1] rounded-[10px]">
+        <div class="w-full sm:w-[55%] bg-[#E8CCF8] rounded-tl-[10px] rounded-tr-[10px] sm:rounded-tr-[0px] sm:rounded-bl-[10px] h-[280px] flex flex-col justify-center items-center p-8">
+          <div class="w-[60px] h-[38px]"> <img src="../asset/icons.png" alt="icons" class=""></div>
+          <p class="text-xl font-normal inter mt-4">"I've been consistently impressed with the quality of service provided by this website. They have exceeded my expectations and delivered exceptional results. Highly recommended!"</p>
+         </div>
+         <div class="w-full sm:w-[45%] h-[280px] sm:rounded-tr-[10px] rounded-br-[10px] rounded-bl-[10px] sm:rounded-bl-[0px]   bg-[#F5E8FC] flex flex-col justify-center items-center">
+           <div class="w-[120px] h-[120px] rounded-full overflow-hidden">
+            <img src="../asset/pic.png" alt="pic">
+           </div>
+           <h1 class="text-2xl font-semibold poppins mt-4 mb-1">John Doe</h1>
+           <p class="text-sm font-semibold poppins text-[#777777]">Company CEO</p>
+         </div>
+      </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+    </section>
+
+
+
+    <!-- Faq -->
+     <section class="max-w-[1596px] px-3 2xl:px-0 mx-auto my-[50px] md:my-[96px] flex flex-col xl:flex-row justify-between items-center gap-6">
+      <!-- Left -->
+      <div class="w-full xl:w-[35%] 2xl:w-[594px]">
+        <h1 class="text-3xl sm:text-5xl md:text-[60px] font-semibold instrument"><span class="text-[#941DDC]">Frequently</span> asked question</h1>
+        <p class="text-base md:text-xl font-normal public mt-7 mb-8">Discover the experiences of our satisfied customers! Read their testimonials to learn how our services have made a positive impact on their businesses.</p>
+        <img src="../asset/faq/faq_image.png" alt="faq_image" class="w-full h-[300px] sm:h-[500px] md:h-[546px]">
+      </div>
+
+      <!-- Right -->
+      <div class="w-full xl:w-[60%] 2xl:w-[800px]">
+        <div class="flex flex-col space-y-[30px] mb-8">
+          <div class="faq-item border border-[#941DDC] w-full rounded-[14px] p-6 md:p-[36px]">
+              <div class="flex flex-row justify-between items-center">
+                  <h1 class="text-base sm:text-lg md:text-[22px] font-medium poppins">What is Webflow and why is it the best website builder?</h1>
+                  <div class="toggle-btn py-3 md:py-4 px-5 md:px-6 bg-white rounded-full shadow cursor-pointer">
+                      <i class="fa-solid fa-chevron-right text-lg text-[#A946E7]"></i>
+                  </div>
+              </div>
+              <p class="faq-content mt-2 text-base md:text-lg font-normal poppins hidden">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+          </div>
+          <div class="faq-item border border-[#941DDC] w-full rounded-[14px] p-6 md:p-[36px]">
+              <div class="flex flex-row justify-between items-center">
+                  <h1 class="text-base sm:text-lg md:text-[22px] font-medium poppins">What is your favorite template from BRIX Templates?</h1>
+                  <div class="toggle-btn py-3 md:py-4 px-5 md:px-6 bg-white rounded-full shadow cursor-pointer">
+                      <i class="fa-solid fa-chevron-right text-lg text-[#A946E7]"></i>
+                  </div>
+              </div>
+              <p class="faq-content mt-2 text-base md:text-lg font-normal poppins hidden">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+          </div>
+          <div class="faq-item border border-[#941DDC] w-full rounded-[14px] p-6 md:p-[36px]">
+              <div class="flex flex-row justify-between items-center">
+                  <h1 class="text-base sm:text-lg md:text-[22px] font-medium poppins">How do you clone a Webflow Template from the Showcase?</h1>
+                  <div class="toggle-btn py-3 md:py-4 px-5 md:px-6 bg-white rounded-full shadow cursor-pointer">
+                      <i class="fa-solid fa-chevron-right text-lg text-[#A946E7]"></i>
+                  </div>
+              </div>
+              <p class="faq-content mt-2 text-base md:text-lg font-normal poppins hidden">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+          </div>
+          <div class="faq-item border border-[#941DDC] w-full rounded-[14px] p-6 md:p-[36px]">
+              <div class="flex flex-row justify-between items-center">
+                  <h1 class="text-base sm:text-lg md:text-[22px] font-medium poppins">Why is BRIX Templates the best Webflow agency out there?</h1>
+                  <div class="toggle-btn py-3 md:py-4 px-5 md:px-6 bg-white rounded-full shadow cursor-pointer">
+                      <i class="fa-solid fa-chevron-right text-lg text-[#A946E7]"></i>
+                  </div>
+              </div>
+              <p class="faq-content mt-2 text-base md:text-lg font-normal poppins hidden">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+          </div>
+          
+    
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center ">
+        <div>
+          <h1 class="text-2xl font-semibold public">Still have Questions?</h1>
+          <p class="text-base font-normal public my-4">Can’t find the answer you’re looking for? please contact with our customer service.</p>
+        </div>
+        <button class="py-[10px] px-[30px] rounded-[5px] text-white bg-[#A946E7] text-base font-bold whitespace-pre">Contact us</button>
+      </div>
+      </div>
+     </section>
+
+
+
+     <!-- Signup -->
+     <section class="bg-[#FAF4FE] flex flex-col justify-center items-center py-[50px] md:py-[96px] px-3 2xl:px-0">
+       <h1 class="text-3xl sm:text-4xl font-semibold public text-center">Signup for free</h1>
+       <p class="text-xl sm:text-2xl font-normal text-[#7D7A7F] poppins mt-7 mb-8 text-center">Join over 130,000 ambitious sellers who power their business with ezipizy</p>
+
+       <div class="border border-[#941DDC] w-full lg:w-[809px] rounded-full pl-5 sm:pl-10 pr-2 sm:pr-3 py-2 sm:py-3 flex flex-row justify-between items-center">
+        <input type="email" placeholder="Enter your email address" class="bg-[#FAF4FE] outline-none text-sm sm:text-base poppins font-normal w-[250px]">
+        <button
+        class="public font-medium text-sm sm:text-lg lg:text-xl py-2 sm:py-3 xl:py-4 px-3 sm:px-7 xl:px-8 border bg-[#941DDC] rounded-[30px] text-white flex flex-row items-center gap-1"
+      >
+        <span>Get Started</span>
+        <i class="fa-solid fa-arrow-right border-r-[2px]"></i>
+      </button>
+       </div>
+
+       <div>
+        <ul class="text-base font-normal poppins flex flex-row gap-2 text-[#7D7A7F] mt-2">
+          <li>Signup for free</li>
+          <li class="mt-1">*</li>
+          <li>Easy setup</li>
+          <li class="mt-1">*</li>
+          <li>Cancel any time</li>
+        </ul>
+       </div>
+     </section>
+
+
+     <!-- Footer -->
+     <footer class="bg-[#941DDC]">
+     <div class="flex flex-col lg:flex-row justify-between  max-w-[1636px] px-3 2xl:px-0 mx-auto pt-[70px] md:pt-[142px] pb-[90px] text-white gap-6">
+       <!-- Left site -->
+       <div class="w-full lg:w-[40%] xl:w-[465px]">
+        <img src="../asset/footer/footer-logo.png" alt="Logo" class="w-[175px] h-[60px]">
+       <p class="text-base font-medium poppins mt-[22px] mb-[30px]">Hear what our clients have to say about their experience with us! Real stories, honest opinions, and valuable insights from those who matter most our customers.</p>
+
+       <div class="flex flex-row gap-8">
+         <i class="fa-brands fa-instagram w-[22px] h-[22px]"></i>
+         <i class="fa-brands fa-youtube w-[22px] h-[22px]"></i>
+         <i class="fa-brands fa-facebook w-[22px] h-[22px]"></i>
+         <i class="fa-brands fa-twitter w-[22px] h-[22px]"></i>
+       </div>
+      </div>
+
+
+      <!-- Right site -->
+      <div class="w-full lg:w-[60%] xl:w-[696px] grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6 lg:mt-0">
+       <div class="lg:border-l-[1px] lg:border-l-[#BE73ED] pl-0 sm:pl-[30px]">
+         <h1 class="text-base font-semibold poppins">Company</h1>
+        <ul class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]">
+          <li>About us</li>
+          <li>Values</li>
+          <li>Jobs</li>
+          <li>Become partner</li>
+          <li>Contact us</li>
+          <li>Newsletters</li>
+        </ul>
+       </div>
+       <div class="border-l-[1px] border-l-[#BE73ED]  pl-[30px] ">
+        <h1 class="text-base font-semibold poppins">Product categories list</h1>
+        <ul class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]">
+          <li>UI/UX</li>
+          <li>Web development</li>
+          <li>Branding</li>
+          <li>Videography</li>
+          <li>Marketing</li>
+          <li>Others</li>
+        </ul>
+      </div>
+       <div class="sm:border-l-[1px] sm:border-l-[#BE73ED] pl-0 sm:pl-[30px] mt-10 sm:mt-0">
+        <h1 class="text-base font-semibold poppins">Support</h1>
+        <ul class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]">
+          <li>Video tutorials</li>
+          <li>Academy</li>
+          <li>Hire an Expert</li>
+          <li>Report abuse</li>
+          <li>Hire an Expert</li>
+        </ul>
+       </div>
+      </div>
+    </div>
+    <hr class="border border-[#BE73ED] max-w-[1636px] px-3 2xl:px-0 mx-auto">
+
+    <div class="max-w-[1636px] px-3 2xl:px-0 mx-auto flex flex-col lg:flex-row justify-between items-center mt-[18px] text-white pb-[52px]"> 
+     <p class="text-xl font-normal poppins">© 2025 Ezipizy. All rights reserved.</p>
+     <div class="flex flex-row gap-3 sm:gap-[52px] mt-6 lg:mt-0">
+      <p class="text-base font-normal poppins ">Term of services</p>
+      <p class="text-base font-normal poppins">Privacy policy</p>
+      <p class="text-base font-normal poppins">THelp & support</p>
+
+     </div>
+   </div>
+     </footer>
+
+<!--Faq Script -->
+<script>
+  document.querySelectorAll('.toggle-btn').forEach((btn) => {
+      btn.addEventListener('click', function () {
+          let faqContent = this.parentElement.nextElementSibling;
+          let icon = this.querySelector('i');
+          
+          faqContent.classList.toggle('hidden');
+          icon.classList.toggle('rotate-90');
+      });
+  });
+</script>
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        340: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1440: {
+          slidesPerView: "auto",
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+  </body>
+</html>
