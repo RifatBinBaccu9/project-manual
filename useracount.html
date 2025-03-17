@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .SellEzipizy{
+    background: linear-gradient(94.74deg, #BE73ED 15.12%, #941DDC 84.88%);
+  }
+  .useracount{
+    background: radial-gradient(50% 239.54% at 50% 50%, #EAD2F9 0%, #EFECF0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="max-w-[1592px] px-3 2xl:px-0 mx-auto">
+        <nav
+          class="flex flex-row justify-between items-center border-[2px] border-[#941DDC] rounded-[52px] py-2 sm:py-3 xl:py-4 pr-2 sm:pr-3 xl:pr-4 pl-4 sm:pl-6 xl:pl-8 my-5 sm:my-7 lg:my-8 xl:my-10"
+        >
+          <div
+            class="w-[80px] sm:w-[100px] md:w-[120px] xl:w-[180px] h-[30px] sm:h-[40px] xl:h-[54px]"
+          >
+            <img
+              src="../asset/nabver/Logo.png"
+              alt="Logo"
+              class="w-full h-full"
+            />
+          </div>
+
+          <ul
+            class="hidden lg:flex flex-row gap-6 xl:gap-10 public font-medium text-lg xl:text-xl text-black"
+          >
+            <li class=""><a href="#">Home</a></li>
+            <li><a href="#" class="public">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="flex flex-row items-center gap-4">
+            <button
+              class="public font-medium ttext-base sm:text-lg lg:text-xl text-black"
+            >
+              Login
+            </button>
+            <div
+              class="w-[2px] h-4 bg-black ml-2 sm:ml-3 lg:ml-4 mr-3 sm:mr-5 lg:mr-7"
+            ></div>
+            <button
+              class="public font-medium text-base sm:text-lg lg:text-xl py-2 sm:py-3 xl:py-[14px] px-5 sm:px-7 xl:px-[45px] border bg-[#941DDC] rounded-[30px] text-white"
+            >
+              Register
+            </button>
+          </div>
+        </nav>
+      </div>
+
+    <div class="max-w-[1634px] mx-auto 2xl:px-0 px-3 my-[50px] lg:my-[100px] lg:border-t-[2px] border-t-[#D5A5F3]">
+        
+        <div class="lg:flex w-full">
+            <div class="hidden lg:block  px-8 md:px-[60px] mt-[64px]">
+                <div class="w-[228px]">
+                 <h1 class="text-[#941DDC] text-[32px] font-semibold poppins">Hello, John</h1>
+                 <div class="flex flex-row gap-2 justify-between items-center mt-8 mb-[30px] text-xl font-semibold poppins">
+                     <div class="flex flex-row gap-2  items-center">
+                         <i class="fa-regular fa-user"></i>
+                     <p>My Profile</p>
+                     </div>
+                     <i class="fa-solid fa-chevron-right"></i>
+                 </div>
+     
+                 <div class="flex flex-row gap-2 items-center mb-[30px] text-xl font-semibold poppins">
+                     <i class="fa-solid fa-money-check"></i>
+                     <p>My Purchases</p>
+                 </div>
+                 <button class="SellEzipizy text-white flex flex-row gap-2 items-center border py-[12px] px-[24px] rounded-[10px]">
+                     <i class="fa-solid fa-cart-shopping"></i>
+                     <span>Sell On Ezipizy</span>
+                 </button>
+                </div>
+             </div>
+
+             <div class="lg:border-l-[2px] border-l-[#D5A5F3] pl-0 lg:pl-[62px] w-full">
+                 <h1 class="text-[#000] text-[32px] mt-[64px] font-semibold poppins">Manage my account</h1>
+                 <div class="flex flex-row gap-8 sm:gap-[64px] mt-8 items-center">
+                    <img src="./rifat.jpg" alt="rifat" class="w-[100px] h-[100px] rounded-full">
+                    <div>
+                        <h1 class="text-xl font-semibold poppins">John Tate</h1>
+                        <p class="mt-2 mb-[14px] text-base font-normal poppins">Customer</p>
+                        <div class="flex flex-row gap-2 text-base font-normal poppins items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <samp>Los Angeles, California, USA</samp>
+                        </div>
+                    </div>
+                 </div>
+                 
+
+                 <div class="border-t-[2px] border-t-[#D5A5F3] mt-[64px] w-full">
+                    <div class="flex flex-row justify-between items-center mt-[64px] w-full">
+                        <h1 class="text-2xl font-semibold poppins">Personal Information</h1>
+                        <p class="text-[#941DDC] text-lg font-normal poppins">Edit</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-x-3 gap-y-8 mt-[32px]  justify-between">
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">First Name</h1>
+                            <p class="text-sm font-semibold poppins">John</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">Last Name</h1>
+                            <p class="text-sm font-semibold poppins">Tate</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">Gender</h1>
+                            <p class="text-sm font-semibold poppins">Male</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">Email address</h1>
+                            <p class="text-sm font-semibold poppins">John@gmail.com</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">Phone</h1>
+                            <p class="text-sm font-semibold poppins">(213) 555-1234</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-row justify-between items-center mt-[64px]">
+                        <h1 class="text-2xl font-semibold poppins">Address</h1>
+                        <p class="text-[#941DDC] text-lg font-normal poppins">Edit</p>
+                    </div>
+
+
+                    <div class="grid grid-cols-2 gap-x-3 gap-y-8 mt-[32px]  justify-between">
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">Country</h1>
+                            <p class="text-sm font-semibold poppins">United State of America</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">City/State </h1>
+                            <p class="text-sm font-semibold poppins">California, USA</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">Email address</h1>
+                            <p class="text-sm font-semibold poppins">John</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">TAX ID</h1>
+                            <p class="text-sm font-semibold poppins">AABDA132434</p>
+                        </div>
+                        </div>
+
+
+                    <div class="flex flex-row justify-between items-center mt-[64px]">
+                        <h1 class="text-2xl font-semibold poppins">Billing Address</h1>
+                        <p class="text-[#941DDC] text-lg font-normal poppins">Edit</p>
+                    </div>
+
+
+                    <div class="grid grid-cols-2 gap-x-3 gap-y-8 mt-[32px]  justify-between">
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">Country</h1>
+                            <p class="text-sm font-semibold poppins">United State of America</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">City/State </h1>
+                            <p class="text-sm font-semibold poppins">California, USA</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">Email address</h1>
+                            <p class="text-sm font-semibold poppins">John</p>
+                        </div>
+                        <div class="">
+                            <h1 class="mb-2 text-base font-normal poppins">TAX ID</h1>
+                            <p class="text-sm font-semibold poppins">AABDA132434</p>
+                        </div>
+                        </div>
+
+                    <div>
+                        <h1 class="text-2xl font-semibold poppins mt-[64px]">Language</h1>
+                        <p class="text-sm font-normal poppins mt-8">English UK</p>
+                    </div>
+
+                    <div>
+                        <h1 class="text-2xl font-semibold poppins mt-[64px]">Payment Method</h1>
+                        <p class="text-sm font-normal poppins mt-8">Manage Your Payment Preferences</p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-3   mt-6">
+                       <div class="useracount border border-[#A946E7] py-2 px-8 rounded-[5px] flex flex-row items-center justify-between gap-2 w-full sm:w-[432px]">
+                        <div class="flex flex-row items-center gap-2">
+                            <div class="w-[64px] h-[64px]">
+                                <img src="./Paypal.png" alt="Paypal" class="w-full h-full">
+                            </div>
+                        <div>
+                            <h1 class="text-base sm:text-xl font-semibold poppins">John@gmail.com</h1>
+                            <p class="text-sm font-normal poppins mt-2">Expiry 08/2027</p>
+                        </div>
+                        </div>
+                        <p class="text-[#941DDC] text-lg font-normal poppins">Eidt</p>
+                       </div>
+
+                       <div class="text-[#000] py-4 px-8 text-sm font-semibold poppins border border-[#A946E7] rounded-[5px] flex flex-row items-center gap-2">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span class="">Add new</span>
+                       </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="bg-[#941DDC]">
+        <div class="flex flex-col lg:flex-row justify-between  max-w-[1636px] px-3 2xl:px-0 mx-auto pt-[70px] md:pt-[142px] pb-[90px] text-white gap-6">
+          <!-- Left site -->
+          <div class="w-full lg:w-[40%] xl:w-[465px]">
+           <img src="../asset/footer/footer-logo.png" alt="Logo" class="w-[175px] h-[60px]">
+          <p class="text-base font-medium poppins mt-[22px] mb-[30px]">Hear what our clients have to say about their experience with us! Real stories, honest opinions, and valuable insights from those who matter most our customers.</p>
+   
+          <div class="flex flex-row gap-8">
+            <i class="fa-brands fa-instagram w-[22px] h-[22px]"></i>
+            <i class="fa-brands fa-youtube w-[22px] h-[22px]"></i>
+            <i class="fa-brands fa-facebook w-[22px] h-[22px]"></i>
+            <i class="fa-brands fa-twitter w-[22px] h-[22px]"></i>
+          </div>
+         </div>
+   
+   
+         <!-- Right site -->
+         <div class="w-full lg:w-[60%] xl:w-[696px] grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6 lg:mt-0">
+          <div class="lg:border-l-[1px] lg:border-l-[#BE73ED] pl-0 sm:pl-[30px]">
+            <h1 class="text-base font-semibold poppins">Company</h1>
+           <ul class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]">
+             <li>About us</li>
+             <li>Values</li>
+             <li>Jobs</li>
+             <li>Become partner</li>
+             <li>Contact us</li>
+             <li>Newsletters</li>
+           </ul>
+          </div>
+          <div class="border-l-[1px] border-l-[#BE73ED]  pl-[30px] ">
+           <h1 class="text-base font-semibold poppins">Product categories list</h1>
+           <ul class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]">
+             <li>UI/UX</li>
+             <li>Web development</li>
+             <li>Branding</li>
+             <li>Videography</li>
+             <li>Marketing</li>
+             <li>Others</li>
+           </ul>
+         </div>
+          <div class="sm:border-l-[1px] sm:border-l-[#BE73ED] pl-0 sm:pl-[30px] mt-10 sm:mt-0">
+           <h1 class="text-base font-semibold poppins">Support</h1>
+           <ul class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]">
+             <li>Video tutorials</li>
+             <li>Academy</li>
+             <li>Hire an Expert</li>
+             <li>Report abuse</li>
+             <li>Hire an Expert</li>
+           </ul>
+          </div>
+         </div>
+       </div>
+       <hr class="border border-[#BE73ED] max-w-[1636px] px-3 2xl:px-0 mx-auto">
+   
+       <div class="max-w-[1636px] px-3 2xl:px-0 mx-auto flex flex-col lg:flex-row justify-between items-center mt-[18px] text-white pb-[52px]"> 
+        <p class="text-xl font-normal poppins">© 2025 Ezipizy. All rights reserved.</p>
+        <div class="flex flex-row gap-3 sm:gap-[52px] mt-6 lg:mt-0">
+         <p class="text-base font-normal poppins ">Term of services</p>
+         <p class="text-base font-normal poppins">Privacy policy</p>
+         <p class="text-base font-normal poppins">THelp & support</p>
+   
+        </div>
+      </div>
+        </footer>
+</body>
+</html>

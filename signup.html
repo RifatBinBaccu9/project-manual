@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 46px;
+          height: 20px;
+        }
+        
+        .switch input { 
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+        
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 16px;
+          width: 16px;
+          left: 2px;
+          bottom: 2px;
+          background-color: white;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+        
+        input:checked + .slider {
+          background-color: #2196F3;
+        }
+        
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+        
+        input:checked + .slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(26px);
+        }
+        
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+        
+        .slider.round:before {
+          border-radius: 50%;
+        }
+        </style>
+</head>
+<body>
+    <div class="grid md:grid-cols-2">
+        <div class="flex flex-col justify-center items-center">
+            <div class="w-full md:w-[626px] h-[880px] rounded-[10px] bg-[#E6CCF8] border border-[#941DDC] px-[132px] py-[64px]">
+                <img src="./Logo.png" alt="logo" class="w-[170px] h-[54px]">
+                <h1 class="text-xl font-semibold poppins mt-[90px]">Get started with a free account</h1>
+                <form action="" class="flex flex-col">
+                    <div class="flex flex-row justify-between gap-x-4">
+                        <div class="flex flex-col">
+                            <label for="" class="text-[12px] font-normal poppins mt-6 mb-2">First name</label>
+                            <input type="text" placeholder="First name" class="text-base font-normal poppins w-[172px] px-4 py-[12px] rounded-[6px]">
+                        </div >
+                        <div class="flex flex-col">
+                            <label for="" class="text-[12px] font-normal poppins mt-6 mb-2">Last name</label>
+                            <input type="text" placeholder="Last name" class="text-base font-normal poppins w-[172px] px-4 py-[12px] rounded-[6px]">
+                        </div>
+                    </div>
+                    <label for="" class="text-[12px] font-normal poppins mt-6 mb-2">Email address</label>
+                    <input type="text" placeholder="Enter your email " class="text-base font-normal poppins px-4 py-[12px] rounded-[6px]">
+
+                    <label for="" class="text-[12px] font-normal poppins mt-4 mb-2">Password</label>
+                    <input type="password" placeholder="Choose password" class="text-base font-normal poppins px-4 py-[12px] rounded-[6px]">
+
+                    <div class="flex flex-row justify-between items-center mt-5">
+                        <div class="flex flex-row items-center">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            <p class="text-[12px] font-normal poppins ml-2 text-[#1A1A1A]">Remember me</p>
+                        </div>
+                        <p class="text-[12px] font-normal poppins text-[#A946E7]"></p>
+                    </div>
+                    <button class="w-full bg-[#941DDC] rounded-[10px] h-[50px] mt-8 text-white poppins font-semibold">Create account</button>
+                    
+                    <div class="flex flex-row items-center mt-6 justify-center">
+                        <p class="text-[12px] font-normal poppins text-[#1A1A1A]">Have an account?</p>
+                        <p class="text-[12px] font-normal poppins text-[#A946E7] cursor-pointer">Sign in now</p>
+                    </div>
+                    <p class="text-[12px] font-normal poppins mt-[200px] text-[#1A1A1A]">© Ezipzy 2025</p>
+                </form>
+            </div>
+        </div>
+        <div class="h-[1080px] hidden md:flex flex-col justify-center items-center" style="background-image: url('../../asset/login-bg.png');">
+           <h1 class="text-[60px] font-semibold poppins text-white">EZIPIZY</h1>
+           <p class="text-[30px] font-semibold poppins text-white">Sell your digital files</p>
+        </div>
+    </div>
+</body>
+</html>

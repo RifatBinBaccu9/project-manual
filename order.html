@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .SellEzipizy{
+    background: linear-gradient(94.74deg, #BE73ED 15.12%, #941DDC 84.88%);
+  }
+  .useracount{
+    background: radial-gradient(50% 239.54% at 50% 50%, #EAD2F9 0%, #EFECF0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="max-w-[1592px] px-3 2xl:px-0 mx-auto">
+        <nav
+          class="flex flex-row justify-between items-center border-[2px] border-[#941DDC] rounded-[52px] py-2 sm:py-3 xl:py-4 pr-2 sm:pr-3 xl:pr-4 pl-4 sm:pl-6 xl:pl-8 my-5 sm:my-7 lg:my-8 xl:my-10"
+        >
+          <div
+            class="w-[80px] sm:w-[100px] md:w-[120px] xl:w-[180px] h-[30px] sm:h-[40px] xl:h-[54px]"
+          >
+            <img
+              src="../asset/nabver/Logo.png"
+              alt="Logo"
+              class="w-full h-full"
+            />
+          </div>
+
+          <ul
+            class="hidden lg:flex flex-row gap-6 xl:gap-10 public font-medium text-lg xl:text-xl text-black"
+          >
+            <li class=""><a href="#">Home</a></li>
+            <li><a href="#" class="public">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="flex flex-row items-center gap-4">
+            <button
+              class="public font-medium ttext-base sm:text-lg lg:text-xl text-black"
+            >
+              Login
+            </button>
+            <div
+              class="w-[2px] h-4 bg-black ml-2 sm:ml-3 lg:ml-4 mr-3 sm:mr-5 lg:mr-7"
+            ></div>
+            <button
+              class="public font-medium text-base sm:text-lg lg:text-xl py-2 sm:py-3 xl:py-[14px] px-5 sm:px-7 xl:px-[45px] border bg-[#941DDC] rounded-[30px] text-white"
+            >
+              Register
+            </button>
+          </div>
+        </nav>
+      </div>
+
+    <div class="max-w-[1634px] mx-auto 2xl:px-0 px-3 my-[50px] lg:my-[100px] lg:border-t-[2px] border-t-[#D5A5F3]">
+        
+        <div class="lg:flex w-full">
+            <div class="hidden xl:block  px-8 md:px-[60px] mt-[64px]">
+                <div class="w-[228px]">
+                 <h1 class="text-[#941DDC] text-[32px] font-semibold poppins">Hello, John</h1>
+                 <div class="flex flex-row gap-2 justify-between items-center mt-8 mb-[30px] text-xl font-semibold poppins">
+                     <div class="flex flex-row gap-2  items-center">
+                         <i class="fa-regular fa-user"></i>
+                     <p>My Profile</p>
+                     </div>
+                     <i class="fa-solid fa-chevron-right"></i>
+                 </div>
+     
+                 <div class="flex flex-row gap-2 items-center mb-[30px] text-xl font-semibold poppins">
+                     <i class="fa-solid fa-money-check"></i>
+                     <p>My Purchases</p>
+                 </div>
+                 <button class="SellEzipizy text-white flex flex-row gap-2 items-center border py-[12px] px-[24px] rounded-[10px]">
+                     <i class="fa-solid fa-cart-shopping"></i>
+                     <span>Sell On Ezipizy</span>
+                 </button>
+                </div>
+             </div>
+
+             <div class="xl:border-l-[2px] border-l-[#D5A5F3] pl-0 xl:pl-[62px] w-full">
+                 <div class="flex flex-row items-center gap-2 mt-[64px] mb-6 w-full">
+                    <h1 class="text-[#000] text-2xl lg:text-[32px] font-semibold poppins">My Purchases</h1>
+                    <span class="text-[#A946E7] text-[12px] font-semibold poppins">Total(12)</span>
+                 </div>
+                 
+                 <div class="overflow-x-scroll">
+                    <div class="flex flex-col  gap-5 w-[1236px] xl:w-full  ">
+                        <div class="border border-[#D5A5F3] rounded-[10px] p-[24px]">
+                            <div class="flex flex-row justify-between items-center ">
+                                <h1 class="text-[#941DDC] text-[14px] font-semibold public">#1243243</h1>
+                                <div class="flex flex-row items-center text-sm poppins font-normal text-[#858D9D] gap-4">
+                                    <p>21 Mar 2025</p>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+    
+                            <div class="flex flex-row justify-between items-center gap-8 mt-10">
+                              <div class="  flex flex-row items-center gap-2">
+                                <div class="w-[48px] h-[48px] rounded-[5px]">
+                                    <img src="./photo.png" alt="photo" class="w-full h-full">
+                                </div>
+    
+                                <div class="flex flex-col gap-2">
+                                    <h1 class="text-base font-semibold poppins">Fuzzy Base [VRChat, vTuber Base Mesh].</h1>
+                                    <img src="./rating.png" alt="rating" class="w-[94px] h-[17px]">
+                                </div>
+                              </div>
+    
+                              <div class="text-center w-[200px]">
+                                <p class="text-[12px] font-medium poppins text-[#858D9D] mb-2">Status</p>
+                                <span class="bg-[#E3FFE4] text-[#45EF48] py-1 px-3 rounded-[100px] text-sm font-normal poppins">Completed</span>
+                              </div>
+    
+                              <div class="w-[200px]">
+                                <h1 class="text-[12px] text-[#858D9D] font-medium poppins">Invoice ID</h1>
+                                <p class="text-base font-semibold poppins text-[#333843] mt-2">CT324234</p>
+                              </div>
+    
+    
+                              <div class="w-[52px]">
+                                <h1 class="text-[12px] text-[#858D9D] font-medium poppins">Amount:</h1>
+                                <p class="text-base font-semibold poppins text-[#333843] mt-2">$2213</p>
+                              </div>
+                            </div>
+    
+                            <div class="flex flex-row justify-between items-center mt-2">
+                                <h1 class="text-[#667085] text-sm font-normal poppins">Kristin B. Mitchell</h1>
+                                <button class="text-[#FFFFFF] text-[12px] font-medium poppins bg-[#941DDC] py-[6px] px-[24px] rounded-[5px]">Buy again</button>
+                            </div>
+                        </div>
+                        <div class="border border-[#D5A5F3] rounded-[10px] p-[24px]">
+                            <div class="flex flex-row justify-between items-center ">
+                                <h1 class="text-[#941DDC] text-[14px] font-semibold public">#1243243</h1>
+                                <div class="flex flex-row items-center text-sm poppins font-normal text-[#858D9D] gap-4">
+                                    <p>21 Mar 2025</p>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+    
+                            <div class="flex flex-row justify-between items-center gap-8 mt-10">
+                              <div class="  flex flex-row items-center gap-2">
+                                <div class="w-[48px] h-[48px] rounded-[5px]">
+                                    <img src="./photo.png" alt="photo" class="w-full h-full">
+                                </div>
+    
+                                <div class="flex flex-col gap-2">
+                                    <h1 class="text-base font-semibold poppins">Fuzzy Base [VRChat, vTuber Base Mesh].</h1>
+                                    <img src="./rating.png" alt="rating" class="w-[94px] h-[17px]">
+                                </div>
+                              </div>
+    
+                              <div class="text-center w-[200px]">
+                                <p class="text-[12px] font-medium poppins text-[#858D9D] mb-2">Status</p>
+                                <span class="bg-[#E3FFE4] text-[#45EF48] py-1 px-3 rounded-[100px] text-sm font-normal poppins">Completed</span>
+                              </div>
+    
+                              <div class="w-[200px]">
+                                <h1 class="text-[12px] text-[#858D9D] font-medium poppins">Invoice ID</h1>
+                                <p class="text-base font-semibold poppins text-[#333843] mt-2">CT324234</p>
+                              </div>
+    
+    
+                              <div class="w-[52px]">
+                                <h1 class="text-[12px] text-[#858D9D] font-medium poppins">Amount:</h1>
+                                <p class="text-base font-semibold poppins text-[#333843] mt-2">$2213</p>
+                              </div>
+                            </div>
+    
+                            <div class="flex flex-row justify-between items-center mt-2">
+                                <h1 class="text-[#667085] text-sm font-normal poppins">Kristin B. Mitchell</h1>
+                                <button class="text-[#FFFFFF] text-[12px] font-medium poppins bg-[#941DDC] py-[6px] px-[24px] rounded-[5px]">Buy again</button>
+                            </div>
+                        </div>
+                        <div class="border border-[#D5A5F3] rounded-[10px] p-[24px]">
+                            <div class="flex flex-row justify-between items-center ">
+                                <h1 class="text-[#941DDC] text-[14px] font-semibold public">#1243243</h1>
+                                <div class="flex flex-row items-center text-sm poppins font-normal text-[#858D9D] gap-4">
+                                    <p>21 Mar 2025</p>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+    
+                            <div class="flex flex-row justify-between items-center gap-8 mt-10">
+                              <div class="  flex flex-row items-center gap-2">
+                                <div class="w-[48px] h-[48px] rounded-[5px]">
+                                    <img src="./photo.png" alt="photo" class="w-full h-full">
+                                </div>
+    
+                                <div class="flex flex-col gap-2">
+                                    <h1 class="text-base font-semibold poppins">Fuzzy Base [VRChat, vTuber Base Mesh].</h1>
+                                    <img src="./rating.png" alt="rating" class="w-[94px] h-[17px]">
+                                </div>
+                              </div>
+    
+                              <div class="text-center w-[200px]">
+                                <p class="text-[12px] font-medium poppins text-[#858D9D] mb-2">Status</p>
+                                <span class="bg-[#E3FFE4] text-[#45EF48] py-1 px-3 rounded-[100px] text-sm font-normal poppins">Completed</span>
+                              </div>
+    
+                              <div class="w-[200px]">
+                                <h1 class="text-[12px] text-[#858D9D] font-medium poppins">Invoice ID</h1>
+                                <p class="text-base font-semibold poppins text-[#333843] mt-2">CT324234</p>
+                              </div>
+    
+    
+                              <div class="w-[52px]">
+                                <h1 class="text-[12px] text-[#858D9D] font-medium poppins">Amount:</h1>
+                                <p class="text-base font-semibold poppins text-[#333843] mt-2">$2213</p>
+                              </div>
+                            </div>
+    
+                            <div class="flex flex-row justify-between items-center mt-2">
+                                <h1 class="text-[#667085] text-sm font-normal poppins">Kristin B. Mitchell</h1>
+                                <button class="text-[#FFFFFF] text-[12px] font-medium poppins bg-[#941DDC] py-[6px] px-[24px] rounded-[5px]">Buy again</button>
+                            </div>
+                        </div>
+                        <div class="border border-[#D5A5F3] rounded-[10px] p-[24px]">
+                            <div class="flex flex-row justify-between items-center ">
+                                <h1 class="text-[#941DDC] text-[14px] font-semibold public">#1243243</h1>
+                                <div class="flex flex-row items-center text-sm poppins font-normal text-[#858D9D] gap-4">
+                                    <p>21 Mar 2025</p>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+    
+                            <div class="flex flex-row justify-between items-center gap-8 mt-10">
+                              <div class="  flex flex-row items-center gap-2">
+                                <div class="w-[48px] h-[48px] rounded-[5px]">
+                                    <img src="./photo.png" alt="photo" class="w-full h-full">
+                                </div>
+    
+                                <div class="flex flex-col gap-2">
+                                    <h1 class="text-base font-semibold poppins">Fuzzy Base [VRChat, vTuber Base Mesh].</h1>
+                                    <img src="./rating.png" alt="rating" class="w-[94px] h-[17px]">
+                                </div>
+                              </div>
+    
+                              <div class="text-center w-[200px]">
+                                <p class="text-[12px] font-medium poppins text-[#858D9D] mb-2">Status</p>
+                                <span class="bg-[#E3FFE4] text-[#45EF48] py-1 px-3 rounded-[100px] text-sm font-normal poppins">Completed</span>
+                              </div>
+    
+                              <div class="w-[200px]">
+                                <h1 class="text-[12px] text-[#858D9D] font-medium poppins">Invoice ID</h1>
+                                <p class="text-base font-semibold poppins text-[#333843] mt-2">CT324234</p>
+                              </div>
+    
+    
+                              <div class="w-[52px]">
+                                <h1 class="text-[12px] text-[#858D9D] font-medium poppins">Amount:</h1>
+                                <p class="text-base font-semibold poppins text-[#333843] mt-2">$2213</p>
+                              </div>
+                            </div>
+    
+                            <div class="flex flex-row justify-between items-center mt-2">
+                                <h1 class="text-[#667085] text-sm font-normal poppins">Kristin B. Mitchell</h1>
+                                <button class="text-[#FFFFFF] text-[12px] font-medium poppins bg-[#941DDC] py-[6px] px-[24px] rounded-[5px]">Buy again</button>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="bg-[#941DDC]">
+        <div class="flex flex-col lg:flex-row justify-between  max-w-[1636px] px-3 2xl:px-0 mx-auto pt-[70px] md:pt-[142px] pb-[90px] text-white gap-6">
+          <!-- Left site -->
+          <div class="w-full lg:w-[40%] xl:w-[465px]">
+           <img src="../asset/footer/footer-logo.png" alt="Logo" class="w-[175px] h-[60px]">
+          <p class="text-base font-medium poppins mt-[22px] mb-[30px]">Hear what our clients have to say about their experience with us! Real stories, honest opinions, and valuable insights from those who matter most our customers.</p>
+   
+          <div class="flex flex-row gap-8">
+            <i class="fa-brands fa-instagram w-[22px] h-[22px]"></i>
+            <i class="fa-brands fa-youtube w-[22px] h-[22px]"></i>
+            <i class="fa-brands fa-facebook w-[22px] h-[22px]"></i>
+            <i class="fa-brands fa-twitter w-[22px] h-[22px]"></i>
+          </div>
+         </div>
+   
+   
+         <!-- Right site -->
+         <div class="w-full lg:w-[60%] xl:w-[696px] grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6 lg:mt-0">
+          <div class="lg:border-l-[1px] lg:border-l-[#BE73ED] pl-0 sm:pl-[30px]">
+            <h1 class="text-base font-semibold poppins">Company</h1>
+           <ul class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]">
+             <li>About us</li>
+             <li>Values</li>
+             <li>Jobs</li>
+             <li>Become partner</li>
+             <li>Contact us</li>
+             <li>Newsletters</li>
+           </ul>
+          </div>
+          <div class="border-l-[1px] border-l-[#BE73ED]  pl-[30px] ">
+           <h1 class="text-base font-semibold poppins">Product categories list</h1>
+           <ul class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]">
+             <li>UI/UX</li>
+             <li>Web development</li>
+             <li>Branding</li>
+             <li>Videography</li>
+             <li>Marketing</li>
+             <li>Others</li>
+           </ul>
+         </div>
+          <div class="sm:border-l-[1px] sm:border-l-[#BE73ED] pl-0 sm:pl-[30px] mt-10 sm:mt-0">
+           <h1 class="text-base font-semibold poppins">Support</h1>
+           <ul class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]">
+             <li>Video tutorials</li>
+             <li>Academy</li>
+             <li>Hire an Expert</li>
+             <li>Report abuse</li>
+             <li>Hire an Expert</li>
+           </ul>
+          </div>
+         </div>
+       </div>
+       <hr class="border border-[#BE73ED] max-w-[1636px] px-3 2xl:px-0 mx-auto">
+   
+       <div class="max-w-[1636px] px-3 2xl:px-0 mx-auto flex flex-col lg:flex-row justify-between items-center mt-[18px] text-white pb-[52px]"> 
+        <p class="text-xl font-normal poppins">© 2025 Ezipizy. All rights reserved.</p>
+        <div class="flex flex-row gap-3 sm:gap-[52px] mt-6 lg:mt-0">
+         <p class="text-base font-normal poppins ">Term of services</p>
+         <p class="text-base font-normal poppins">Privacy policy</p>
+         <p class="text-base font-normal poppins">THelp & support</p>
+   
+        </div>
+      </div>
+        </footer>
+</body>
+</html>
