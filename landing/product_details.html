@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="max-w-[1592px] px-3 2xl:px-0 mx-auto">
+      <nav
+        class="flex flex-row justify-between items-center border-[2px] border-[#941DDC] rounded-[52px] py-2 sm:py-3 xl:py-4 pr-2 sm:pr-3 xl:pr-4 pl-4 sm:pl-6 xl:pl-8 my-5 sm:my-7 lg:my-8 xl:my-10"
+      >
+        <div
+          class="w-[80px] sm:w-[100px] md:w-[120px] xl:w-[180px] h-[30px] sm:h-[40px] xl:h-[54px]"
+        >
+          <img
+            src="../asset/nabver/Logo.png"
+            alt="Logo"
+            class="w-full h-full"
+          />
+        </div>
+
+        <ul
+          class="hidden lg:flex flex-row gap-6 xl:gap-10 public font-medium text-lg xl:text-xl text-black"
+        >
+          <li class=""><a href="#">Home</a></li>
+          <li><a href="#" class="public">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="flex flex-row items-center gap-4">
+          <button
+            class="public font-medium ttext-base sm:text-lg lg:text-xl text-black"
+          >
+            Login
+          </button>
+          <div
+            class="w-[2px] h-4 bg-black ml-2 sm:ml-3 lg:ml-4 mr-3 sm:mr-5 lg:mr-7"
+          ></div>
+          <button
+            class="public font-medium text-base sm:text-lg lg:text-xl py-2 sm:py-3 xl:py-[14px] px-5 sm:px-7 xl:px-[45px] border bg-[#941DDC] rounded-[30px] text-white"
+          >
+            Register
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="max-w-[1596px] px-3 2xl:px-0 mx-auto my-10 md:my-[84px]">
+      <div class="flex flex-col lg:flex-row justify-between gap-[34px]">
+        <div class="lg:w-[50%] w-full flex flex-col-reverse sm:flex-row gap-4">
+          <div class="flex flex-col gap-y-8">
+            <img
+              src="../Rectangle 13.png"
+              alt="Rectangle"
+              class="w-full sm:w-[136px] 2xl:h-[126px] xl:h-[100px]"
+            />
+            <img
+              src="../Rectangle 14.png"
+              alt="Rectangle"
+              class="w-full sm:w-[136px] 2xl:h-[126px] xl:h-[100px]"
+            />
+            <img
+              src="../Rectangle 15.png"
+              alt="Rectangle"
+              class="w-full sm:w-[136px] 2xl:h-[126px] xl:h-[100px]"
+            />
+            <img
+              src="../Rectangle 16.png"
+              alt="Rectangle"
+              class="w-full sm:w-[136px] 2xl:h-[126px] xl:h-[100px]"
+            />
+          </div>
+          <div
+            class="w-full lg:w-[693px] 2xl:h-[604px] lg:h-[450px] sm:h-[550px] h-[400px]"
+          >
+            <img
+              src="../Rectangle 13.png"
+              alt="Rectangle"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+
+        <div class="lg:w-[50%] w-full">
+          <h1
+            class="2xl:text-[33px] xl:text-[28px] text-[20px] font-semibold poppins"
+          >
+            Cambridge IGCSE® and O Level Accounting (Cambridge International)
+            2nd Edition
+          </h1>
+          <div class="flex flex-row items-center gap-4 mt-[28px] mb-10">
+            <div class="flex flex-row items-center gap-2">
+              <div class="flex flex-row gap-2">
+                <i
+                  class="fa-solid fa-star 2xl:text-3xl xl:text-2xl text-[#F8B84E]"
+                ></i>
+                <i
+                  class="fa-solid fa-star 2xl:text-3xl xl:text-2xl text-[#F8B84E]"
+                ></i>
+                <i
+                  class="fa-solid fa-star 2xl:text-3xl xl:text-2xl text-[#F8B84E]"
+                ></i>
+                <i
+                  class="fa-solid fa-star 2xl:text-3xl xl:text-2xl text-[#F8B84E]"
+                ></i>
+                <i
+                  class="fa-solid fa-star 2xl:text-3xl xl:text-2xl text-[#F8B84E]"
+                ></i>
+              </div>
+              <span class="text-sm font-normal poppins">4.0 (12)</span>
+            </div>
+            <i class="fa-solid fa-share-nodes text-xl text-[#333333]"></i>
+          </div>
+
+          <div class="flex flex-row gap-x-1">
+            <span
+              class="text-[10px] font-normal poppins bg-[#BE73ED85] rounded-[3px] py-1 px-3"
+              >E book</span
+            >
+            <span
+              class="text-[10px] font-normal poppins bg-[#BE73ED85] rounded-[3px] py-1 px-3"
+              >Audio Book</span
+            >
+            <span
+              class="text-[10px] font-normal poppins bg-[#BE73ED85] rounded-[3px] py-1 px-3"
+              >Digital Book</span
+            >
+          </div>
+
+          <p class="text-base font-normal poppins mt-8">
+            USD(incl. of all taxes)
+          </p>
+
+          <div class="flex flex-row gap-x-5 items-center mt-4">
+            <span
+              class="2xl:text-[33px] xl:text-[28px] text-[20px] font-normal poppins"
+              >$600.72</span
+            >
+            <span
+              class="2xl:text-[23px] xl:text-[18px] text-[12px] font-normal poppins"
+              >$800.00</span
+            >
+          </div>
+
+          <button
+            class="font-medium text-base sm:text-lg 2xl:text-xl py-2 xl:py-[14px] px-5 sm:px-7 xl:px-[45px] border bg-[#A946E7] rounded-[5px] text-white mt-4"
+          >
+            Buy Now
+          </button>
+
+          <div class="flex flex-row gap-x-6 2xl:mt-[106px] mt-[50px]">
+            <img
+              src="../gr1.png"
+              alt="gr1"
+              class="2xl:w-[133px] w-[100px] 2xl:h-10 h-8"
+            />
+            <img
+              src="../gr2.png"
+              alt="gr12"
+              class="2xl:w-[133px] w-[100px] 2xl:h-10 h-8"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <div
+          class="flex flex-row gap-[64px] xl:text-2xl md:text-xl sm:text-lg text-base font-normal poppins"
+        >
+          <h1 class="underline">Description</h1>
+          <h1 class="">Reviews</h1>
+        </div>
+
+        <div
+          class="flex flex-col gap-10 mt-10 lg:text-xl md:text-lg sm:text-base text-sm font-light poppins"
+        >
+          <p>
+            The universe, an expanse of unimaginable proportions, has captivated
+            humanity for millennia. From the earliest stargazers to modern-day
+            astrophysicists, we have sought to unravel the mysteries of its
+            origin, evolution, and ultimate fate. The cosmos, in its grandeur,
+            presents a symphony of celestial objects, each playing a unique role
+            in the intricate dance of cosmic evolution.
+          </p>
+          <p>
+            At the heart of this symphony lie galaxies, colossal collections of
+            stars, gas, dust, and dark matter, bound together by the relentless
+            force of gravity. These cosmic islands, numbering in the billions,
+            come in a variety of shapes and sizes, from the majestic spiral
+            galaxies like our own Milky Way to the serene elliptical galaxies
+            and the chaotic irregular galaxies. Within these galaxies, stars are
+            born in stellar nurseries, fueled by the nuclear fusion of hydrogen
+            into helium, releasing energy that illuminates the cosmos. Stars,
+            the fundamental building blocks of galaxies, come in a dazzling
+            array of sizes, colors, and luminosities, each with its own life
+            cycle, from the birth of a protostar to the dramatic demise of a
+            supernova.
+          </p>
+          <p>
+            Interspersed among the stars and galaxies is the vast emptiness of
+            space, a canvas upon which the cosmic drama unfolds. This seemingly
+            empty void is not truly empty, but rather filled with a tenuous web
+            of gas and dust, the raw materials for future generations of stars
+            and planets. In some regions, this interstellar medium condenses to
+            form nebulae, vibrant clouds of gas and dust, where new stars are
+            born and shine brightly, illuminating the surrounding cosmos.
+          </p>
+          <p>
+            Planets, celestial bodies orbiting stars, add another layer of
+            complexity to the cosmic symphony. These diverse worlds, ranging
+            from gas giants like Jupiter to rocky planets like Earth, can harbor
+            conditions conducive to the emergence of life, a phenomenon that
+            continues to fascinate and elude us. The search for extraterrestrial
+            life, driven by our innate curiosity about our place in the
+            universe, is one of the most compelling endeavors of modern science.
+          </p>
+        </div>
+      </div>
+
+      <!-- Related Products -->
+      <div class="mt-[60px]">
+        <h1 class="xl:text-[33px] md:text-2xl sm:text-xl text-lg font-medium poppins">Related Products</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-8">
+          <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+            <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+            <h1 class="text-base font-semibold poppins my-4">
+              Sword Fighting: Applying God's word to win the battle.
+            </h1>
+
+            <div class="flex flex-row justify-between">
+              <span class="text-[12px] font-normal poppins">By Ryven</span>
+              <div class="flex flex-row items-center gap-2">
+                <span class="text-[16px] font-semibold poppins">$250</span>
+                <span class="text-[12px] font-normal poppins">$300</span>
+              </div>
+            </div>
+            <hr class="border border-[#EAD2F9] my-4"/>
+
+            <div class="flex flex-row justify-between items-center">
+              <div>
+                <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                <div class="flex flex-row items-center gap-[6px]">
+                  <i
+                    class="fa-solid fa-star text-base text-[#F8B84E]"
+                  ></i>
+                  <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                </div>
+              </div>
+
+              <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+            </div>
+          </div>
+          <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+            <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+            <h1 class="text-base font-semibold poppins my-4">
+              Sword Fighting: Applying God's word to win the battle.
+            </h1>
+
+            <div class="flex flex-row justify-between">
+              <span class="text-[12px] font-normal poppins">By Ryven</span>
+              <div class="flex flex-row items-center gap-2">
+                <span class="text-[16px] font-semibold poppins">$250</span>
+                <span class="text-[12px] font-normal poppins">$300</span>
+              </div>
+            </div>
+            <hr class="border border-[#EAD2F9] my-4"/>
+
+            <div class="flex flex-row justify-between items-center">
+              <div>
+                <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                <div class="flex flex-row items-center gap-[6px]">
+                  <i
+                    class="fa-solid fa-star text-base text-[#F8B84E]"
+                  ></i>
+                  <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                </div>
+              </div>
+
+              <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+            </div>
+          </div>
+          <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+            <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+            <h1 class="text-base font-semibold poppins my-4">
+              Sword Fighting: Applying God's word to win the battle.
+            </h1>
+
+            <div class="flex flex-row justify-between">
+              <span class="text-[12px] font-normal poppins">By Ryven</span>
+              <div class="flex flex-row items-center gap-2">
+                <span class="text-[16px] font-semibold poppins">$250</span>
+                <span class="text-[12px] font-normal poppins">$300</span>
+              </div>
+            </div>
+            <hr class="border border-[#EAD2F9] my-4"/>
+
+            <div class="flex flex-row justify-between items-center">
+              <div>
+                <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                <div class="flex flex-row items-center gap-[6px]">
+                  <i
+                    class="fa-solid fa-star text-base text-[#F8B84E]"
+                  ></i>
+                  <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                </div>
+              </div>
+
+              <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+            </div>
+          </div>
+          <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+            <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+            <h1 class="text-base font-semibold poppins my-4">
+              Sword Fighting: Applying God's word to win the battle.
+            </h1>
+
+            <div class="flex flex-row justify-between">
+              <span class="text-[12px] font-normal poppins">By Ryven</span>
+              <div class="flex flex-row items-center gap-2">
+                <span class="text-[16px] font-semibold poppins">$250</span>
+                <span class="text-[12px] font-normal poppins">$300</span>
+              </div>
+            </div>
+            <hr class="border border-[#EAD2F9] my-4"/>
+
+            <div class="flex flex-row justify-between items-center">
+              <div>
+                <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                <div class="flex flex-row items-center gap-[6px]">
+                  <i
+                    class="fa-solid fa-star text-base text-[#F8B84E]"
+                  ></i>
+                  <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                </div>
+              </div>
+
+              <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#941DDC]">
+      <div
+        class="flex flex-col lg:flex-row justify-between max-w-[1636px] px-3 2xl:px-0 mx-auto pt-[70px] md:pt-[142px] pb-[90px] text-white gap-6"
+      >
+        <!-- Left site -->
+        <div class="w-full lg:w-[40%] xl:w-[465px]">
+          <img
+            src="../asset/footer/footer-logo.png"
+            alt="Logo"
+            class="w-[175px] h-[60px]"
+          />
+          <p class="text-base font-medium poppins mt-[22px] mb-[30px]">
+            Hear what our clients have to say about their experience with us!
+            Real stories, honest opinions, and valuable insights from those who
+            matter most our customers.
+          </p>
+
+          <div class="flex flex-row gap-8">
+            <i class="fa-brands fa-instagram w-[22px] h-[22px]"></i>
+            <i class="fa-brands fa-youtube w-[22px] h-[22px]"></i>
+            <i class="fa-brands fa-facebook w-[22px] h-[22px]"></i>
+            <i class="fa-brands fa-twitter w-[22px] h-[22px]"></i>
+          </div>
+        </div>
+
+        <!-- Right site -->
+        <div
+          class="w-full lg:w-[60%] xl:w-[696px] grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6 lg:mt-0"
+        >
+          <div
+            class="lg:border-l-[1px] lg:border-l-[#BE73ED] pl-0 sm:pl-[30px]"
+          >
+            <h1 class="text-base font-semibold poppins">Company</h1>
+            <ul
+              class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]"
+            >
+              <li>About us</li>
+              <li>Values</li>
+              <li>Jobs</li>
+              <li>Become partner</li>
+              <li>Contact us</li>
+              <li>Newsletters</li>
+            </ul>
+          </div>
+          <div class="border-l-[1px] border-l-[#BE73ED] pl-[30px]">
+            <h1 class="text-base font-semibold poppins">
+              Product categories list
+            </h1>
+            <ul
+              class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]"
+            >
+              <li>UI/UX</li>
+              <li>Web development</li>
+              <li>Branding</li>
+              <li>Videography</li>
+              <li>Marketing</li>
+              <li>Others</li>
+            </ul>
+          </div>
+          <div
+            class="sm:border-l-[1px] sm:border-l-[#BE73ED] pl-0 sm:pl-[30px] mt-10 sm:mt-0"
+          >
+            <h1 class="text-base font-semibold poppins">Support</h1>
+            <ul
+              class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]"
+            >
+              <li>Video tutorials</li>
+              <li>Academy</li>
+              <li>Hire an Expert</li>
+              <li>Report abuse</li>
+              <li>Hire an Expert</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="border border-[#BE73ED] max-w-[1636px] px-3 2xl:px-0 mx-auto"
+      />
+
+      <div
+        class="max-w-[1636px] px-3 2xl:px-0 mx-auto flex flex-col lg:flex-row justify-between items-center mt-[18px] text-white pb-[52px]"
+      >
+        <p class="text-xl font-normal poppins">
+          © 2025 Ezipizy. All rights reserved.
+        </p>
+        <div class="flex flex-row gap-3 sm:gap-[52px] mt-6 lg:mt-0">
+          <p class="text-base font-normal poppins">Term of services</p>
+          <p class="text-base font-normal poppins">Privacy policy</p>
+          <p class="text-base font-normal poppins">THelp & support</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
