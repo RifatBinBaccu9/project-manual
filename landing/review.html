@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -9,14 +9,62 @@
     <!-- Tailwind cnfig -->
     <link rel="stylesheet" href="./src/input.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+   <div class="max-w-[856px] mx-auto p-3">
+    <div class=" border rounded-[12px] p-6 sm:p-8 md:p-[64px]">
+        <div class="flex justify-between items-center">
+          <h1 class="text-xl sm:text-2xl md:text-[33px] font-medium poppins">Rate the product!</h1>
+          <i class="fa-solid fa-xmark text-lg sm:text-xl md:text-2xl"></i>
+        </div>
+        <p class="text-sm sm:text-base md:text-lg lg:text-xl font-normal poppins mt-4 mb-8">
+          The universe, an expanse of unimaginable proportions, has captivated
+          humanity for millennia. From the earliest star
+        </p>
+        <p class="text-sm sm:text-base font-semibold poppins mb-4">
+          How would you rate this product?
+        </p>
+  
+        <div class="flex flex-row text-base sm:text-lg md:text-xl lg:text-2xl gap-2 text-[#F8B84E] mb-[68px]">
+          <div>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+  
+        <div>
+          <textarea name="" id="" placeholder="Write your review..." class="outline-none text-base font-normal poppins w-full h-[110px] sm:h-[225px] border border-[#171717] rounded-[6px] px-4 py-[12px]"></textarea>
+        </div>
+  
+        <div class="mt-8">
+          <button class="text-sm sm:text-base font-semibold poppins text-white bg-[#BE73ED] w-full py-2 sm:py-3 md:py-4 rounded-[6px]">Submit now</button>
+        </div>
+      </div>
+   </div>
+  </body>
 </html>
