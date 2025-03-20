@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+      <!-- Navigation -->
+      <div class="max-w-[1592px] px-3 2xl:px-0 mx-auto">
+        <nav
+          class="flex flex-row justify-between items-center border-[2px] border-[#941DDC] rounded-[52px] py-2 sm:py-3 xl:py-4 pr-2 sm:pr-3 xl:pr-4 pl-4 sm:pl-6 xl:pl-8 my-5 sm:my-7 lg:my-8 xl:my-10"
+        >
+          <div
+            class="w-[80px] sm:w-[100px] md:w-[120px] xl:w-[180px] h-[30px] sm:h-[40px] xl:h-[54px]"
+          >
+            <img
+              src="../asset/nabver/Logo.png"
+              alt="Logo"
+              class="w-full h-full"
+            />
+          </div>
+  
+          <ul
+            class="hidden lg:flex flex-row gap-6 xl:gap-10 public font-medium text-lg xl:text-xl text-black"
+          >
+            <li class=""><a href="#">Home</a></li>
+            <li><a href="#" class="public">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+  
+          <div class="flex flex-row items-center gap-4">
+            <button
+              class="public font-medium ttext-base sm:text-lg lg:text-xl text-black"
+            >
+              Login
+            </button>
+            <div
+              class="w-[2px] h-4 bg-black ml-2 sm:ml-3 lg:ml-4 mr-3 sm:mr-5 lg:mr-7"
+            ></div>
+            <button
+              class="public font-medium text-base sm:text-lg lg:text-xl py-2 sm:py-3 xl:py-[14px] px-5 sm:px-7 xl:px-[45px] border bg-[#941DDC] rounded-[30px] text-white"
+            >
+              Register
+            </button>
+          </div>
+        </nav>
+      </div>
+  
+      <!-- Product Filter -->
+    <div class="max-w-[1596px] px-3 2xl:px-0 mx-auto my-10 md:my-[84px]">
+      <div class="grid grid-cols-6 xl:grid-cols-5 gap-5 ">
+        <div class="hidden lg:block max-h-[1050px] col-span-2 xl:col-span-1 border border-[#D5A5F3] rounded-[10px]">
+          <div class="flex flex-row justify-between bg-[#941DDC] text-white items-center py-4 px-6 rounded-tl-[10px] rounded-tr-[10px]">
+            <span class=" text-lg font-semibold poppins">Filters</span>
+            <span class="text-[12px] font-semibold poppins">Clear</span>
+          </div>
+
+          <div class="p-5">
+             <h1 class="text-lg font-semibold poppins text-[#941DDC] ">Related Tags</h1>
+
+             <div class="flex flex-col gap-2 ">
+                <label for="digital" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                 <input type="radio" id="digital" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                 <span class="text-lg font-normal poppins text-[#00000080]">Digital download</span>
+                </label>
+                <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                 <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                 <span class="text-lg font-normal poppins text-[#00000080]">Png files</span>
+                </label>
+                <label for="Printable" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                 <input type="radio" id="Printable" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                 <span class="text-lg font-normal poppins text-[#00000080]">Printable</span>
+                </label>
+                <label for="Sublimation" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                 <input type="radio" id="Sublimation" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                 <span class="text-lg font-normal poppins text-[#00000080]">Sublimation design</span>
+                </label>
+                <label for="Vrchat" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                 <input type="radio" id="Vrchat" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                 <span class="text-lg font-normal poppins text-[#00000080]">Vrchat</span>
+                </label>
+                <label for="Template " class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                 <input type="radio" id="Template " name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                 <span class="text-lg font-normal poppins text-[#00000080]">Template </span>
+                </label>
+             </div>
+          </div>
+        </div>
+        <div class="col-span-6 lg:col-span-4">
+  
+           <!-- Related Products -->
+        <div class="">
+          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+            <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+              <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+              <h1 class="text-base font-semibold poppins my-4">
+                Sword Fighting: Applying God's word to win the battle.
+              </h1>
+  
+              <div class="flex flex-row justify-between">
+                <span class="text-[12px] font-normal poppins">By Ryven</span>
+                <div class="flex flex-row items-center gap-2">
+                  <span class="text-[16px] font-semibold poppins">$250</span>
+                  <span class="text-[12px] font-normal poppins">$300</span>
+                </div>
+              </div>
+              <hr class="border border-[#EAD2F9] my-4"/>
+  
+              <div class="flex flex-row justify-between items-center">
+                <div>
+                  <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                  <div class="flex flex-row items-center gap-[6px]">
+                    <i
+                      class="fa-solid fa-star text-base text-[#F8B84E]"
+                    ></i>
+                    <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                  </div>
+                </div>
+  
+                <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="bg-[#941DDC]">
+        <div
+          class="flex flex-col lg:flex-row justify-between max-w-[1636px] px-3 2xl:px-0 mx-auto pt-[70px] md:pt-[142px] pb-[90px] text-white gap-6"
+        >
+          <!-- Left site -->
+          <div class="w-full lg:w-[40%] xl:w-[465px]">
+            <img
+              src="../asset/footer/footer-logo.png"
+              alt="Logo"
+              class="w-[175px] h-[60px]"
+            />
+            <p class="text-base font-medium poppins mt-[22px] mb-[30px]">
+              Hear what our clients have to say about their experience with us!
+              Real stories, honest opinions, and valuable insights from those who
+              matter most our customers.
+            </p>
+  
+            <div class="flex flex-row gap-8">
+              <i class="fa-brands fa-instagram w-[22px] h-[22px]"></i>
+              <i class="fa-brands fa-youtube w-[22px] h-[22px]"></i>
+              <i class="fa-brands fa-facebook w-[22px] h-[22px]"></i>
+              <i class="fa-brands fa-twitter w-[22px] h-[22px]"></i>
+            </div>
+          </div>
+  
+          <!-- Right site -->
+          <div
+            class="w-full lg:w-[60%] xl:w-[696px] grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6 lg:mt-0"
+          >
+            <div
+              class="lg:border-l-[1px] lg:border-l-[#BE73ED] pl-0 sm:pl-[30px]"
+            >
+              <h1 class="text-base font-semibold poppins">Company</h1>
+              <ul
+                class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]"
+              >
+                <li>About us</li>
+                <li>Values</li>
+                <li>Jobs</li>
+                <li>Become partner</li>
+                <li>Contact us</li>
+                <li>Newsletters</li>
+              </ul>
+            </div>
+            <div class="border-l-[1px] border-l-[#BE73ED] pl-[30px]">
+              <h1 class="text-base font-semibold poppins">
+                Product categories list
+              </h1>
+              <ul
+                class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]"
+              >
+                <li>UI/UX</li>
+                <li>Web development</li>
+                <li>Branding</li>
+                <li>Videography</li>
+                <li>Marketing</li>
+                <li>Others</li>
+              </ul>
+            </div>
+            <div
+              class="sm:border-l-[1px] sm:border-l-[#BE73ED] pl-0 sm:pl-[30px] mt-10 sm:mt-0"
+            >
+              <h1 class="text-base font-semibold poppins">Support</h1>
+              <ul
+                class="text-base font-normal poppins flex flex-col space-y-4 mt-[30px]"
+              >
+                <li>Video tutorials</li>
+                <li>Academy</li>
+                <li>Hire an Expert</li>
+                <li>Report abuse</li>
+                <li>Hire an Expert</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="border border-[#BE73ED] max-w-[1636px] px-3 2xl:px-0 mx-auto"
+        />
+  
+        <div
+          class="max-w-[1636px] px-3 2xl:px-0 mx-auto flex flex-col lg:flex-row justify-between items-center mt-[18px] text-white pb-[52px]"
+        >
+          <p class="text-xl font-normal poppins">
+            © 2025 Ezipizy. All rights reserved.
+          </p>
+          <div class="flex flex-row gap-3 sm:gap-[52px] mt-6 lg:mt-0">
+            <p class="text-base font-normal poppins">Term of services</p>
+            <p class="text-base font-normal poppins">Privacy policy</p>
+            <p class="text-base font-normal poppins">THelp & support</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
