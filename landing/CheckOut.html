@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="max-w-[630px] mx-auto border rounded-md p-6 sm:p-[52px] m-3">
+      <div class="flex justify-between items-center">
+        <h1 class="text-xl sm:text-2xl md:text-[33px] font-medium poppins">
+          Check Out
+        </h1>
+        <i class="fa-solid fa-circle-xmark text-lg sm:text-xl md:text-2xl"></i>
+      </div>
+
+      <div class="mt-6">
+        <img src="../Image 4.png" alt="image" class="w-full h-[326px]" />
+      </div>
+
+      <div>
+        <h1 class="text-xl font-semibold poppins mt-2">
+          I Want a Better Catastrophe | E-book
+        </h1>
+        <div class="flex flex-row items-center gap-2 mt-4">
+          <i class="fa-solid fa-bag-shopping text-3xl"></i>
+          <p class="text-xl font-semibold poppins">Order summary</p>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto">
+        <div
+        class="w-[640px] flex flex-row justify-between gap-[100px] border p-6 rounded-[5px] mt-4"
+      >
+        <div class="">
+          <h1 class="font-medium text-base poppins">
+            1 x I Want a Better Catastrophe | E-book
+          </h1>
+          <p class="text-sm font-normal poppins mt-1">
+            It is a long established fact thle content.It is a long established
+            fact thle content.It is a long established...
+          </p>
+        </div>
+        <span>$213</span>
+      </div>
+      </div>
+
+      <div class="border py-3 px-4 rounded-[5px] mt-2">
+        <div class="flex flex-row justify-between items-center">
+          <h1>Subtotal</h1>
+          <p>$24,99</p>
+        </div>
+        <div class="flex flex-row justify-between items-center mt-2">
+          <h1>Tax(24%)</h1>
+          <p>$19</p>
+        </div>
+      </div>
+
+      <div class="border py-3 px-4 rounded-[5px] mt-2">
+        <div class="flex flex-row justify-between items-center mt-2">
+          <h1>Total</h1>
+          <p>$25,18</p>
+        </div>
+      </div>
+
+      <h1 class="text-xl font-semibold poppins mt-[6px]">
+        Who should we send the file to?
+      </h1>
+
+      <div class="grid sm:grid-cols-2 gap-[18px] mt-4">
+        <div class="flex flex-col gap-2">
+          <label for="name" class="text-sm font-semibold poppins">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name..."
+            class="rounded-[6px] border text-base font-normal poppins py-[14px] px-4"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="email" class="text-sm font-semibold poppins">Name</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your e-mail..."
+            class="rounded-[6px] border text-base font-normal poppins py-[14px] px-4"
+          />
+        </div>
+      </div>
+
+      <h1 class="text-xl font-semibold poppins mt-4">
+        Payment Details
+      </h1>
+
+      <div class="border py-3 px-4 rounded-[5px] flex flex-row items-center justify-between mt-2">
+        <div class="flex flex-row items-center gap-2">
+          <div class="border-2 border-[#4C6FFF] rounded-full inline-block">
+            <div class="w-[10px] h-[10px] rounded-full bg-[#4C6FFF] border-2  border-white"></div>
+          </div>
+          <span class="text-sm font-normal poppins">Payment card</span>
+        </div>
+        <div>
+            <img src="../card.png" alt="card" class="w-[34px] h-[22px]">
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-[18px] mt-4">
+        <div class="flex flex-col gap-2">
+          <label for="name" class="text-sm font-semibold poppins">Name of card</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your card name..."
+            class="rounded-[6px] border text-base font-normal poppins py-[14px] px-4"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="email" class="text-sm font-semibold poppins">Card Number</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="1122 5879 9876 ****"
+            class="rounded-[6px] border text-base font-normal poppins py-[14px] px-4"
+          />
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-[18px] mt-4">
+        <div class="flex flex-col gap-2">
+          <label for="name" class="text-sm font-semibold poppins">Exp. Date</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="12 Jan 27"
+            class="rounded-[6px] border text-base font-normal poppins py-[14px] px-4"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="email" class="text-sm font-semibold poppins">CVV</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="***"
+            class="rounded-[6px] border text-base font-normal poppins py-[14px] px-4"
+          />
+        </div>
+      </div>
+
+
+      <div class="mt-4">
+        <button class="w-full py-3 flex justify-center  rounded-[5px] bg-[#F8B84E]">
+            <img src="../pp.png" alt="Paypal" class="">
+        </button>
+        <button class="w-full text-base font-medium poppins text-center text-white bg-[#333333] rounded-[5px] py-3 mt-7">Confirm and Pay</button>
+      </div>
+
+      <div class="flex flex-row justify-center items-center gap-1 text-[#333333] mt-2">
+        <i class="fa-solid fa-unlock-keyhole text-lg"></i>
+        <h1 class="text-base font-medium poppins">SSL Secure Payment</h1>
+      </div>
+
+    </div>
+  </body>
+</html>
